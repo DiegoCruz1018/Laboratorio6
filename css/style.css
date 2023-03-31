@@ -1,6 +1,7 @@
 :root{
-    --primario:  #bd86f8;
-    --secundario:  #e2f99e;
+    --primario:  #c4ba9c; 
+    --secundario:   #d8beef; 
+    --terciario:  #e2f99e;
     --blanco: white;
     --negro: black;
     --gris:  #cecece; 
@@ -81,13 +82,10 @@ img{
     }
 }
 .enlace-index{
-    color: black;
+    color: var(--blanco);
 }
 .enlace-index:hover{
-    color: white;
-}
-.navegacion__enlace--activo{
-    color: var(--blanco);
+    color: var(--negro);
 }
 
 .barra{
@@ -116,12 +114,15 @@ img{
 .navegacion__enlace{
     display: block;
     text-align: center;
-    color: black;
+    color: var(--blanco);
     font-weight: bold;
     font-size: 1.8rem;
 }
 .navegacion__enlace:hover{
-    color: white;
+    color: var(--negro);
+}
+.navegacion__enlace--activo{
+    color: var(--negro);
 }
 
 /* Contenido */
