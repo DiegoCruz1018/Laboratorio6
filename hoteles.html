@@ -4,31 +4,89 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog Turismo</title>
+        <title>TurisLatam</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
     <body>
         <header class="header">
-            <div class="contenedor">
+            <div class="container">
                 <div class="barra">
-                    <h1 class="titulo-barra text-center"><a class="enlace-index" href="index.html">Blog Turismo</a></h1>
+                    <h1 class="titulo-barra text-center"><a class="enlace-index text-decoration-none" href="index.html">Turismo en Latinoamérica</a></h1>
                     <nav class="navegacion">
-                        <a class="navegacion__enlace" href="lugares.html">Lugares a visitar</a>
-                        <a class="navegacion__enlace navegacion__enlace--activo" href="hoteles.html">Mejores Hoteles</a>
-                        <a class="navegacion__enlace" href="galeria.html">Galeria</a>
+                        <a class="navegacion__enlace text-decoration-none" href="lugares.html">Lugares a visitar</a>
+                        <a class="navegacion__enlace navegacion__enlace--activo text-decoration-none" href="hoteles.html">Mejores Hoteles</a>
+                        <a class="navegacion__enlace text-decoration-none" href="galeria.html">Galeria</a>
                     </nav>
                 </div>
             </div>
         </header>
-
         
+        <main class="container">
+            <div class="contenido-cards">
+                <div class="card">
+                    <img src="img/sumaq hotel.jpg" class="card-img-top img-machu" alt="Imagen Hotel">
+                    <div class="card-body">
+                      <h5 class="card-titulo">Sumaq Machu Picchu Hotel</h5>
+                      <p class="card-text">
+                        Está ubicado a los pies del santuario histórico de Machu Picchu cerca al hermoso río Vilcanota y con 
+                        impresionantes vistas a las montañas imponentes. Sumaq es un hotel con estilo andino contemporáneo inspirado en las milenarias 
+                        culturas peruanas que ofrece un servicio de lujo personalizado, una innovadora cocina peruana y un relajante spa que brinda 
+                        tratamientos ancestrales incas para el cuerpo y mente.
+                      </p>
+    
+                      <div class="d-grid gap-2">
+                        <a href="#" class="boton btn-lg text-decoration-none" role="button">Más Información</a>
+                      </div>
+                    </div>
+                </div>
 
-        <footer class="footer">
-            <div class="contenedor">
-                <p class="footer-texto">
+                <div class="card">
+                    <img src="img/comarca hotel.jpg" class="card-img-top img-machu" alt="Imagen Hotel">
+                    <div class="card-body">
+                      <h5 class="card-titulo">Hotel Tapasoli</h5>
+                      <p class="card-text">
+                        Es una magnífica elección para viajeros que vayan a Xilitla, ya que ofrece un ambiente económico además de numerosos servicios 
+                        diseñados para mejorar su estancia. Ofrece servicio de habitaciones. Además, como huésped de Hotel Tapasoli puedes disfrutar de 
+                        restaurante disponible allí mismo. Quizás quieras probar algunos restaurantes de comida mexicana cercanos, 
+                        como Los Cayos, La Huastequita y Querreque.
+                      </p>
+    
+                      <div class="d-grid gap-2">
+                        <a href="#" class="boton btn-lg text-decoration-none" role="button">Más Información</a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/hotel patagonia.jpg" class="card-img-top img-machu" alt="Imagen Hotel">
+                    <div class="card-body">
+                      <h5 class="card-titulo">Hotel Patagonia</h5>
+                      <p class="card-text">
+                        Se encuentra en el centro de Río Gallegos, a solo 100 metros de la avenida principal, y ofrece spa, centro de fitness 
+                        y habitaciones con conexión de wifi gratis y TV por cable. El alojamiento alberga un restaurante y sirve desayunos. 
+                        Las habitaciones del Hotel Patagonia presentan una decoración sobria en tonos cálidos y cuentan con ventanas grandes que 
+                        las hacen muy luminosas. Todas tienen escritorio y minibar.
+                      </p>
+    
+                      <div class="d-grid gap-2">
+                        <a href="#" class="boton btn-lg text-decoration-none" role="button">Más Información</a>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </main>
+
+        <footer class="pie">
+            <div class="container">
+                <p class="pie-texto">
                     Todos los derechos reservados 2023
                 </p>
             </div>
         </footer>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
