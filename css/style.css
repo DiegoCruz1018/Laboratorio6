@@ -299,13 +299,16 @@ article:last-of-type{
 }
 
 .galeria{
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 @media (min-width: 768px) {
     .galeria{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
+    }
+    .galeria-img{
+        margin-top: 0;
     }
 }
 @media (min-width: 992px) {
@@ -314,9 +317,14 @@ article:last-of-type{
         grid-template-columns: repeat(6, 1fr);
         gap: 2rem;
     }
+    .galeria-img{
+        margin-top: 0;
+    }
 }
-.galeria-img{
-    margin-top: 2rem;
+@media (max-width: 767px) {
+    .galeria-img{
+        margin-top: 2rem;
+    }
 }
 
 /* Footer */
