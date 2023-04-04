@@ -76,6 +76,27 @@ article:last-of-type{
     color: var(--blanco);
     font-weight: bold;
 }
+.boton-info{
+    text-align: center;
+    background-color: var(--primarioOscuro);
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    font-weight: bold;
+}
+.boton-menu{
+    text-align: center;
+    background-color: var(--blanco);
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: var(--primario);
+    font-weight: bold;
+}
+.bg-secundario{
+    background-color: var(--secundario);
+}
 
 /* Barra */
 .header{
@@ -161,7 +182,14 @@ article:last-of-type{
 }
 
 /* card */
+
 @media (min-width: 992px) {
+    .contenido-cards{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+@media (min-width: 769px) {
     .contenido-cards{
         display: grid;
         grid-template-columns: repeat(3 , 1fr);
@@ -173,10 +201,36 @@ article:last-of-type{
         grid-template-columns: repeat(2 , 1fr);
     }
 }
+@media (max-width: 767px) {
+    .contenido-cards{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
 
 .card{
     width: 36rem;
     margin-bottom: 2rem;
+}
+@media (min-width: 360px) {
+    .card{
+        width: 34rem;
+    }
+}
+@media (min-width: 375px) {
+    .card{
+        width: 36rem;
+    }
+}
+@media (min-width: 411px) {
+    .card{
+        width: 39rem;
+    }
+}
+@media (min-width: 568px) {
+    .card{
+        width: 50rem;
+    }
 }
 @media (min-width: 768px) {
     .card{
@@ -229,10 +283,46 @@ article:last-of-type{
     font-weight: bold;
 }
 
+/* Tips Viajes */
+.titulo-item{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.p-item{
+    font-size: 1.5rem;
+}
+.menu-canvas{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria{
+    margin-top: 2rem;
+}
+@media (min-width: 768px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+@media (min-width: 992px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
+    }
+}
+.galeria-img{
+    margin-top: 2rem;
+}
+
 /* Footer */
 .pie{
     margin-top: 2rem;
-    background-color: var(--secundario);
+    background-color: var(--terciario);
     padding: 2rem;
 }
 .pie-texto{
